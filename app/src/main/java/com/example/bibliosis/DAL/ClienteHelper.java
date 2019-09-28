@@ -1,4 +1,4 @@
-package DAL;
+package com.example.bibliosis.DAL;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.bibliosis.R;
 
-import DML.Cliente;
+import com.example.bibliosis.DML.Cliente;
 
 public class ClienteHelper extends SQLiteOpenHelper {
 

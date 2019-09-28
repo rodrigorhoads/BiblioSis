@@ -1,11 +1,12 @@
-package DML;
+package com.example.bibliosis.DML;
 
-public class CategoriaLeitor {
+public class CategoriaDeLivros {
 
     private int id;
     private int CodigoCategoria;
     private String DescCategoria;
     private int NrMaximoDiaEmprestimo;
+    private double VlrMultaDiaAtraso;
 
     public int getId() {
         return id;
@@ -37,5 +38,13 @@ public class CategoriaLeitor {
 
     public void setNrMaximoDiaEmprestimo(int nrMaximoDiaEmprestimo) {
         NrMaximoDiaEmprestimo = nrMaximoDiaEmprestimo;
+    }
+
+    public double getVlrMultaDiaAtraso() {
+        return VlrMultaDiaAtraso;
+    }
+
+    public void setVlrMultaDiaAtraso(double vlrMultaDiaAtraso) {
+        VlrMultaDiaAtraso = vlrMultaDiaAtraso;
     }
 }

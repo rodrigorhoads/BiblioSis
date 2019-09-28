@@ -1,4 +1,4 @@
-package DML;
+package com.example.bibliosis.DML;
 
 public class Endereco {
 

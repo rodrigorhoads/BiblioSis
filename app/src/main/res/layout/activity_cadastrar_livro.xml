@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarLivro">
+
+    <EditText
+        android:id="@+id/Titulo"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+
+    <EditText
+        android:id="@+id/ISBN"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="ISBN"
+        app:layout_constraintEnd_toEndOf="@+id/Titulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Titulo"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo"></EditText>
+
+    <EditText
+        android:id="@+id/DataPublicacao"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Data da publicação"
+        app:layout_constraintEnd_toEndOf="@+id/ISBN"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ISBN"
+        app:layout_constraintTop_toBottomOf="@+id/ISBN"></EditText>
+
+    <EditText
+        android:id="@+id/NrEdicao"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Número da edição"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/DataPublicacao"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/DataPublicacao"
+        app:layout_constraintTop_toBottomOf="@+id/DataPublicacao"></EditText>
+
+    <EditText
+        android:id="@+id/edtTxtEditora"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Editora"
+        app:layout_constraintEnd_toEndOf="@+id/NrEdicao"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/NrEdicao"
+        app:layout_constraintTop_toBottomOf="@+id/NrEdicao"></EditText>
+
+
+    <EditText
+        android:id="@+id/xtNrPageinas"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:inputType="number"
+        android:text="Número de páginas"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtEditora"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtEditora"></EditText>
+
+    <EditText
+        android:id="@+id/edtTxtPalavraChave"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Palavra-chave"
+        app:layout_constraintStart_toStartOf="@+id/xtNrPageinas"
+        app:layout_constraintTop_toBottomOf="@+id/xtNrPageinas"></EditText>
+
+    <EditText
+        android:id="@+id/edtTxtAutores"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:text="Autores"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtPalavraChave"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtPalavraChave"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPalavraChave"></EditText>
+
+    <Button
+        android:id="@+id/btnCadastrarLivro"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:text="Cadastrar livro"
+        app:layout_constraintEnd_toEndOf="@+id/edtTxtAutores"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtAutores"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtAutores"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

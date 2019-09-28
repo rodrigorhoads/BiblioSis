@@ -1,4 +1,4 @@
-package DAL;
+package com.example.bibliosis.DAL;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,10 +8,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.bibliosis.R;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-import DML.Livro;
+import com.example.bibliosis.DML.Livro;
 
 
 public class LivroHelper extends SQLiteOpenHelper {
@@ -25,7 +24,7 @@ public class LivroHelper extends SQLiteOpenHelper {
             NOMETABELA = context.getString(R.string.NOMETABELALIVRO);
     }
 
-    public long incluirCliente(Livro livro) {
+    public long incluirLivro(Livro livro) {
 
         ContentValues values = new ContentValues();
 
@@ -34,7 +33,6 @@ public class LivroHelper extends SQLiteOpenHelper {
         values.put("codigo", livro.getCodigo());
         values.put("editora", livro.getEditora());
         values.put("nrEdicao", livro.getNrEdicao());
-        values.put("codCategoria", livro.getCategoriaDeLivro().getCodigoCategoria());
         values.put("autores", Arrays.toString(livro.getAutores()));
         values.put("palavrasChave", Arrays.toString(livro.getPalavrasChave()));
 

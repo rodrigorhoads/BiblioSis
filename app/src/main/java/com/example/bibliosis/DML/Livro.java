@@ -1,6 +1,5 @@
-package DML;
+package com.example.bibliosis.DML;
 
-import java.util.ArrayList;
 import java.util.Date;
 
 public class Livro {
@@ -13,7 +12,7 @@ public class Livro {
     private CategoriaDeLivros categoriaDeLivro;
     private String[] autores;
     private String [] palavrasChave;
-    private Date dataPublicacao;
+    private String dataPublicacao;
     private int nrEdicao;
     private String editora;
     private int nrPaginas;
@@ -74,11 +73,11 @@ public class Livro {
         this.palavrasChave = palavrasChave;
     }
 
-    public Date getDataPublicacao() {
+    public String getDataPublicacao() {
         return dataPublicacao;
     }
 
-    public void setDataPublicacao(Date dataPublicacao) {
+    public void setDataPublicacao(String dataPublicacao) {
         this.dataPublicacao = dataPublicacao;
     }
 
