@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true">
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarCliente">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/edtNome"
+        android:hint="Nome"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/edtCpf"
+        android:layout_width="300dp"
+        android:hint="CPF"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome"></EditText>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="300dp"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtDataNascimento"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtDataNascimento"
+        app:layout_constraintTop_toBottomOf="@+id/edtDataNascimento"></EditText>
+
+    <EditText
+        android:id="@+id/edtDataNascimento"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Data de Nascimento"
+        android:inputType="date"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtCelular"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtCelular"
+        app:layout_constraintTop_toBottomOf="@+id/edtCelular"></EditText>
+
+    <EditText
+        android:id="@+id/edtCelular"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Celular"
+        android:layout_marginTop="24dp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/edtCategoriaLeitor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtCategoriaLeitor"
+        app:layout_constraintTop_toBottomOf="@+id/edtCategoriaLeitor"></EditText>
+
+    <EditText
+        android:id="@+id/edtCategoriaLeitor"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:hint="Codigo categoria leitor"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/edtCpf"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edtCpf"
+        app:layout_constraintTop_toBottomOf="@+id/edtCpf"></EditText>
+
+    <Button
+        android:id="@+id/btnCadCliente"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Cadastrar Cliente"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -2,8 +2,9 @@ package com.example.bibliosis.BLL;
 
 import android.content.Context;
 
-import com.example.bibliosis.DAL.ClienteHelper;
+import com.example.bibliosis.DAL.ClienteDAL;
 import com.example.bibliosis.DML.Cliente;
+import java.util.List;
 
 public class BoCliente {
 
@@ -16,8 +17,18 @@ public class BoCliente {
 
     public void incluirCliente(Cliente cliente){
 
-        ClienteHelper clienteHelper = new ClienteHelper(context);
-        clienteHelper.incluirCliente(cliente);
+        ClienteDAL clienteHelper = new ClienteDAL(context);
 
+        clienteHelper.incluirCliente(cliente);
+    }
+
+    public List<Cliente> listarClientes() {
+
+        ClienteDAL clienteDAL = new ClienteDAL(context);
+
+
+        List<Cliente> listaClientes = clienteDAL.listarClientes();
+
+        return listaClientes;
     }
 }

@@ -1,5 +1,7 @@
 package com.example.bibliosis.DML;
 
+import androidx.annotation.NonNull;
+
 import java.util.Date;
 
 public class Livro {
@@ -103,5 +105,11 @@ public class Livro {
 
     public void setNrPaginas(int nrPaginas) {
         this.nrPaginas = nrPaginas;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return  this.getTítulo();
     }
 }

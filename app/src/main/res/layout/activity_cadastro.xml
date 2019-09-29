@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Cadastro">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Bem Vindo a tela de Cadastro"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btnCadastrarCliente"
+        android:layout_width="200dp"
+        android:text="Cadastrar Cliente"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"></Button>
+
+    <Button
+        android:id="@+id/btnCadastrarLivro"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92dp"
+        android:text="Cadastrar Livro"
+        app:layout_constraintEnd_toEndOf="@+id/btnCadastrarCliente"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCadastrarCliente"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrarCliente"></Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

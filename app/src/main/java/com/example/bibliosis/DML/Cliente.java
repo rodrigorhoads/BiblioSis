@@ -11,7 +11,7 @@ public class Cliente {
     private String celular;
     private String email;
     private String Cpf;
-    private Date dataNascimento;
+    private String dataNascimento;
     private CategoriaLeitor categoriaLeitor;
 
 
@@ -55,11 +55,11 @@ public class Cliente {
         Cpf = cpf;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

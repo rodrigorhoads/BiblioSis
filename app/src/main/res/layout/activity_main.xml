@@ -7,12 +7,47 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Bem Vindo ao BiblioSYS"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="84dp"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"></Button>
+
+    <Button
+        android:id="@+id/btnListarLivros"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        android:text="Visualizar Livros"
+        app:layout_constraintEnd_toEndOf="@+id/btnCadastrar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"></Button>
+
+    <Button
+        android:id="@+id/btnListarClientes"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="88dp"
+        android:text="Visualizar Clientes"
+        app:layout_constraintEnd_toEndOf="@+id/btnListarLivros"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnListarLivros"
+        app:layout_constraintTop_toBottomOf="@+id/btnListarLivros"></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

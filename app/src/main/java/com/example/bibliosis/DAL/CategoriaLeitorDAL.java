@@ -1,4 +1,4 @@
 package com.example.bibliosis.DAL;
 
-public class CategoriaLivroHelper {
+public class CategoriaLeitorDAL {
 }
